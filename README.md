@@ -9,7 +9,7 @@ SignSpeak is a real-time gesture recognition and text-to-speech conversion syste
 ✅ **Dataset Collection & Preparation Started**  
 ✅ **Model Training Plan Defined**  
 
-## 📂 Project Structure (So Far)
+## 📂 Project Structure 
 ```
 SignSpeak/
 │── dataset/            # Gesture images for training
@@ -19,6 +19,10 @@ SignSpeak/
 │── hand_tracking.py    # Handles hand tracking
 │── gesture_recognition.py  # CNN model training & prediction
 │── tts.py              # Converts text to speech
+More files comming if needed
+///////
+//////
+//////
 ```
 
 ## 🔧 Installation
