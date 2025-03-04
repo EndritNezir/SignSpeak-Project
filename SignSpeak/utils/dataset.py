@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.utils import to_categorical
 
-dataset_dir = './asl_dataset'  
+dataset_dir = './Guesture_dataset'  
 
 # Function to preprocess dataset
 def preprocess_dataset():

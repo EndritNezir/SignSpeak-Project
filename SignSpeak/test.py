@@ -1,12 +1,12 @@
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 import cv2
 import numpy as np
 
-# Model Load کرو
-model = load_model('gesture_recognition_model.h5')
+model = load_model('model.keras')
 
-# Gesture Dictionary (Manually define کرو)
-gesture_dict = {i: chr(65 + i) for i in range(26)}  # A-Z gestures
+gesture_dict = {i: str(i) for i in range(10)}  # 0-9
+gesture_dict.update({i + 10: chr(65 + i) for i in range(26)})  # A-Z
+
 
 def predict_gesture(image_path):
     img = cv2.imread(image_path)
@@ -19,7 +19,6 @@ def predict_gesture(image_path):
     
     return gesture_dict.get(predicted_class, "Unknown Gesture")
 
-# Test کرو
-test_image = "path_to_test_image.jpg"
+test_image = "\Fiverr Projects\SignSpeak system\SignSpeak\hand1_3_bot_seg_3_cropped.jpeg"
 result = predict_gesture(test_image)
 print(f'Predicted Gesture: {result}')
